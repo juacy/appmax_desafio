@@ -63,5 +63,30 @@ Para configurar a conexão devemos fazer o login no airflow, clicar em admin e d
 
 ![Tela de login airflow](./auxiliares/conexao_spark.png)
 
+Separei em 3 dags, onde cada dag utiliza o spark submit operator, que evoca um job do spark:
+
+* dag_gold - chama o job do spark atividade_3.py
+* dag_ip - chama o job do spark atividade_2.py 
+* dag_pedidos - chama o job do spark atividade_1.py
+
+![Imagem das dags no airflow](./auxiliares/dags_airflow.png)
+
+Explicando os jobs do spark:
+
+* atividade_1.py - Realiza a leitura do arquivo /dags/spark_jobs/bronze/pedidos.csv e realiza as trativas solicitas e salvar como o arquivo /dags/spark_jobs/silver/pedidos.parquet
+* atividade_2.py - Realiza a leitura do /dags/spark_jobs/bronze/ips.csv e com esse ip's faz a requisição na api, os dados da api são gravados no arquivo /dags/spark_jobs/bronze/ips_api.csv, após isso esses dois arquivos são lidos e agrupados no arquivo /dags/spark_jobs/silver/api.parquet
+* atividade_3.py - leitura dos arquivos /dags/spark_jobs/silver/api.parquet e /dags/spark_jobs/silver/pedidos.parquet agrupando eles e salvando /dags/spark_jobs/gold/pedidos_com_ip.parquet
+
 # Problemas e pontos a melhorar
+
+## Problemas
+
+Meu computador ficava muito lento enquanto todos os contaneirs estavam sendo executado, dessa forma não consegui executar todos os passos muito bem, apenas por partes. Por conta disso não consegui executar todas as dags diretamente, então executei os jobs do spark no jupyter notebook. As únicas dags que consegui executar foi dag_gold e dag_pedidos, acho que por conta das requisições da API, a dag_ip dava erro de memória no meu computador.
+
+## Pontos a melhorar
+
+O job atividade_2.py poderia ter sido dividido em dois jobs, um para fazer as requisições e criar o arquivo e outro job só para fazer o agrupamento e salvar na silver.
+
+Os dados ficaram dentro de uma pasta com os códigos, isso foi devido a problemas de leitura quando colocava eles em pastas distintas, então por conta disso ficaram todos dentro da pasta dag, mas deviam estar mais isolados.
+
 
