@@ -48,7 +48,13 @@ No meu caso foi spark://ec0cc1435450:7077
 ## Jupyter Notebook
 
 Para acessar o jupyter notebook basta ir até **localhost:8888** no seu navegador, irá abrir uma tela pedindo a senha, basta colocar a palavra tad.
-![Tela de login airflow](./auxiliares/jupyter_token.png)
+![Login jupyter](./auxiliares/jupyter_token.png)
+
+## Execução
+
+Para executar as dags, basta entrar no airflow e procurar por spark_ip_silver, spark_pedidos_silver e spark_pedidos_ip_gold e dar play, pois era foram programadas para executar apenas uma vez e estão desativadas por padrão.
+
+![dags](./auxiliares/dags_airflow.png)
 
 # Explicações e decisões
 
@@ -61,15 +67,13 @@ Para configurar a conexão devemos fazer o login no airflow, clicar em admin e d
 * Host = spark://ec0cc1435450 (Podemos pegar esse caminho ao acessar o spark)
 * Port = 7077 (Números após os dois pontos no caminho do spark)
 
-![Tela de login airflow](./auxiliares/conexao_spark.png)
+![Conexão spark](./auxiliares/conexao_spark.png)
 
 Separei em 3 dags, onde cada dag utiliza o spark submit operator, que evoca um job do spark:
 
 * dag_gold - chama o job do spark atividade_3.py
 * dag_ip - chama o job do spark atividade_2.py 
 * dag_pedidos - chama o job do spark atividade_1.py
-
-![Imagem das dags no airflow](./auxiliares/dags_airflow.png)
 
 Explicando os jobs do spark:
 
