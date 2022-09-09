@@ -16,7 +16,7 @@ A estrutura de pastas já está toda pronta, então basta construir a imagem do 
 docker build .
 ```
 
-Antes de inicializar tudo temos que fazer o seguinte comando, para criar as credências do airflow, segundo a documentação oficial.
+Antes de inicializar tudo temos que fazer o seguinte comando, para criar as credênciais do airflow, segundo a documentação oficial.
 ```
 docker-compose -f docker-compose.airflow.yaml up airflow-init
 ```
