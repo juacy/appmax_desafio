@@ -1,0 +1,1328 @@
+[2022-09-09T17:09:21.269+0000] {processor.py:153} INFO - Started process (PID=31030) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:09:21.270+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:09:21.271+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:09:21.270+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:09:28.092+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:09:28.897+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:09:29.058+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:09:29.439+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:09:29.440+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:09:29.453+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.186 seconds
+[2022-09-09T17:10:01.575+0000] {processor.py:153} INFO - Started process (PID=31932) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:10:01.627+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:10:01.628+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:10:01.627+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:10:08.406+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:10:09.174+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:10:09.366+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:10:09.811+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:10:09.812+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:10:09.827+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.254 seconds
+[2022-09-09T17:11:09.530+0000] {processor.py:153} INFO - Started process (PID=32494) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:11:09.624+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:11:09.625+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:11:09.625+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:11:17.484+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:11:18.473+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:11:18.664+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:11:19.138+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:11:19.138+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:11:19.152+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 9.625 seconds
+[2022-09-09T17:13:21.734+0000] {processor.py:153} INFO - Started process (PID=883) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:13:21.743+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:13:21.744+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:13:21.743+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:13:30.934+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:13:33.823+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:13:34.901+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:13:47.701+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:13:47.701+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:13:47.717+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 25.986 seconds
+[2022-09-09T17:14:18.328+0000] {processor.py:153} INFO - Started process (PID=1604) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:14:18.383+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:14:18.384+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:14:18.384+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:14:25.538+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:14:26.300+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:14:26.484+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:14:26.901+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:14:26.902+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:14:26.916+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.591 seconds
+[2022-09-09T17:15:16.784+0000] {processor.py:153} INFO - Started process (PID=2414) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:15:16.933+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:15:16.934+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:15:16.934+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:15:24.585+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:15:25.465+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:15:25.688+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:15:26.164+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:15:26.165+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:15:26.181+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 9.400 seconds
+[2022-09-09T17:16:01.913+0000] {processor.py:153} INFO - Started process (PID=3336) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:16:01.984+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:16:01.985+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:16:01.985+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:16:09.011+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:16:09.786+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:16:09.952+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:16:10.309+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:16:10.309+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:16:10.324+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.414 seconds
+[2022-09-09T17:16:47.967+0000] {processor.py:153} INFO - Started process (PID=4221) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:16:47.999+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:16:47.999+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:16:47.999+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:16:55.818+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:16:56.669+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:16:56.856+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:16:57.269+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:16:57.270+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:16:57.284+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 9.320 seconds
+[2022-09-09T17:17:47.193+0000] {processor.py:153} INFO - Started process (PID=4756) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:17:47.272+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:17:47.273+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:17:47.273+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:17:55.011+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:20:05.691+0000] {processor.py:153} INFO - Started process (PID=5273) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:20:05.734+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:20:05.735+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:20:05.734+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:20:32.525+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:20:33.512+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:20:33.755+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:20:34.265+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:20:34.266+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:20:34.278+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 28.591 seconds
+[2022-09-09T17:21:05.424+0000] {processor.py:153} INFO - Started process (PID=6086) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:21:05.834+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:21:05.836+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:21:05.836+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:21:12.975+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:21:13.805+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:21:13.979+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:21:14.352+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:21:14.352+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:21:14.366+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.945 seconds
+[2022-09-09T17:21:46.864+0000] {processor.py:153} INFO - Started process (PID=6955) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:21:47.031+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:21:47.032+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:21:47.032+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:21:53.722+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:21:54.467+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:21:54.647+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:21:55.035+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:21:55.035+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:21:55.048+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.187 seconds
+[2022-09-09T17:22:29.199+0000] {processor.py:153} INFO - Started process (PID=7822) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:22:29.389+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:22:29.389+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:22:29.389+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:22:36.285+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:22:37.027+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:22:37.176+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:22:37.567+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:22:37.568+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:22:37.580+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 8.384 seconds
+[2022-09-09T17:24:52.637+0000] {processor.py:153} INFO - Started process (PID=8344) to work on /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:24:52.638+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/atividade_4.py for tasks to queue
+[2022-09-09T17:24:52.639+0000] {logging_mixin.py:115} INFO - [2022-09-09T17:24:52.638+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:25:01.333+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+
+only showing top 20 rows
+[2022-09-09T17:25:02.349+0000] {logging_mixin.py:115} INFO - +--------------------+------------------+
+|             tipo_cc| sum(valor_pedido)|
++--------------------+------------------+
+|     americanexpress|4389.6500000000015|
+|            bankcard| 3241.530000000001|
+|      china-unionpay| 3950.999999999999|
+|diners-club-carte...| 2683.219999999999|
+| diners-club-enroute|           4088.96|
+|diners-club-inter...|             366.1|
+|   diners-club-us-ca|368.17999999999995|
+|        instapayment|1335.4699999999998|
+|                 jcb|33108.200000000004|
+|               laser|           2318.02|
+|             maestro| 6265.369999999999|
+|          mastercard| 7253.419999999998|
+|                solo|1574.1100000000001|
+|              switch| 4978.219999999999|
+|                visa|2180.4200000000005|
+|       visa-electron|           4431.96|
++--------------------+------------------+
+[2022-09-09T17:25:02.534+0000] {logging_mixin.py:115} INFO - +---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+| id|      nome|  sobrenome|               email|valor_pedido|        data_pedido|             tipo_cc|     nome completo|              regiao|        cidade|          pais|dateColumn|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+|  1| Aleksandr|   Crighton|acrighton0@instag...|       71.31|2021-08-21 14:18:35|                 jcb|Aleksandr Crighton|    Ehime Prefecture|   Uwajima-shi|         Japan|2021-08-21|
+|  2|       Tad|     Arangy|tarangy1@studiopr...|       28.12|2021-10-28 22:44:27|             maestro|        Tad Arangy|        Buenos Aires|  Buenos Aires|     Argentina|2021-10-28|
+|  3|      Wake|     Samart|   wsamart2@ning.com|      148.18|2022-06-26 22:33:37|       visa-electron|       Wake Samart|                null|          null|          null|2022-06-26|
+|  4|     Svend|    Morfell|smorfell3@arizona...|      148.74|2021-12-23 15:19:03|                 jcb|     Svend Morfell|        Pennsylvania|     Whitehall| United States|2021-12-23|
+|  5|    Phoebe|  Wealthall|pwealthall4@smugm...|      146.84|2022-04-16 23:08:17|             maestro|  Phoebe Wealthall| Epirus and Weste...|      Ioannina|        Greece|2022-04-16|
+|  6|     Sayre|     Ashbey|sashbey5@google.c...|      118.62|2022-06-14 22:24:33|                 jcb|      Sayre Ashbey|       North Holland|     Amsterdam|   Netherlands|2022-06-14|
+|  7|       Dun|     Breens|dbreens6@seattlet...|      136.92|2021-09-24 17:54:06|       visa-electron|        Dun Breens|            New York|      New York| United States|2021-09-24|
+|  8|     Reine|     Noakes|rnoakes7@nbcnews.com|       53.63|2022-04-01 04:13:58|            bankcard|      Reine Noakes|          Overijssel|        Almelo|   Netherlands|2022-04-01|
+|  9|    Flossy|    Raynton|fraynton8@telegra...|       144.2|2021-09-10 23:26:33|                 jcb|    Flossy Raynton|         Mexico City|   Mexico City|        Mexico|2021-09-10|
+| 10|    Marjie|  Errington|merrington9@unice...|       87.56|2021-12-18 00:34:57|     americanexpress|  Marjie Errington|            New York|      New York| United States|2021-12-18|
+| 11|  Albrecht|      Brood|   abrooda@hexun.com|       70.54|2021-11-18 09:33:16|diners-club-inter...|    Albrecht Brood|     Plaines Wilhems| Quatre Bornes|     Mauritius|2021-11-18|
+| 12|   Katrina|       Crim|kcrimb@hugedomain...|       56.41|2022-05-23 06:39:36|            bankcard|      Katrina Crim|            Illinois|       Chicago| United States|2022-05-23|
+| 13|Jaquenetta|    Theaker|  jtheakerc@yelp.com|       19.67|2021-09-03 08:54:36|                 jcb|Jaquenetta Theaker|        Pennsylvania|     Whitehall| United States|2021-09-03|
+| 14|   Brennen|     Pauwel|bpauweld@referenc...|       15.71|2022-01-31 02:23:48|                 jcb|    Brennen Pauwel|        Keelung City|        Taipei|        Taiwan|2022-01-31|
+| 15|     Corty|Northcliffe|cnorthcliffee@fc2...|        17.0|2021-12-27 08:37:12|             maestro| Corty Northcliffe|             Tianjin|       Tianjin|         China|2021-12-27|
+| 16|     Loise| Ryhorovich|lryhorovichf@baid...|      113.88|2021-10-26 07:23:20|             maestro|  Loise Ryhorovich|            Virginia|       Ashburn| United States|2021-10-26|
+| 17|   Mozelle|    Laurand|mlaurandg@arstech...|      134.56|2022-07-23 22:46:50|                 jcb|   Mozelle Laurand|               Tokyo|        Minato|         Japan|2022-07-23|
+| 18|Fitzgerald|    Sworder|   fsworderh@mlb.com|      140.55|2021-09-01 10:14:28|                 jcb|Fitzgerald Sworder|                null|          null|          null|2021-09-01|
+| 19|    Gretna|   Falconer|   gfalconeri@pen.io|      108.93|2021-07-27 11:42:55|                 jcb|   Gretna Falconer|                null|          null|          null|2021-07-27|
+| 20|     Parke|   Lantiffe|plantiffej@wordpr...|       62.48|2022-02-02 09:42:27|                 jcb|    Parke Lantiffe|        Pennsylvania|    Middletown| United States|2022-02-02|
++---+----------+-----------+--------------------+------------+-------------------+--------------------+------------------+--------------------+--------------+--------------+----------+
+only showing top 20 rows
+[2022-09-09T17:25:03.052+0000] {logging_mixin.py:115} INFO - +----------+------------------+
+|dateColumn| sum(valor_pedido)|
++----------+------------------+
+|2021-07-27|            272.78|
+|2021-07-28|            364.27|
+|2021-07-29|223.32999999999998|
+|2021-07-30|            145.59|
+|2021-07-31|            362.04|
+|2021-08-01|            465.43|
+|2021-08-02|            141.14|
+|2021-08-03|278.86999999999995|
+|2021-08-04|             96.47|
+|2021-08-05|             67.43|
+|2021-08-06|             91.17|
+|2021-08-07|            259.32|
+|2021-08-08|191.73999999999998|
+|2021-08-09|215.48000000000002|
+|2021-08-10|            270.24|
+|2021-08-11|            213.93|
+|2021-08-12|             61.95|
+|2021-08-14|            263.75|
+|2021-08-16| 57.93000000000001|
+|2021-08-17|287.59000000000003|
++----------+------------------+
+only showing top 20 rows
+[2022-09-09T17:25:03.052+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/atividade_4.py
+[2022-09-09T17:25:03.066+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/atividade_4.py took 10.432 seconds

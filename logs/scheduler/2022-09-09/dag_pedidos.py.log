@@ -1,0 +1,335 @@
+[2022-09-09T18:41:52.597+0000] {processor.py:153} INFO - Started process (PID=53) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:41:52.598+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:41:52.598+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:41:52.598+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:41:52.615+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:41:52.637+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:41:52.637+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:41:52.672+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:41:52.672+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:41:52.811+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.218 seconds
+[2022-09-09T18:43:01.648+0000] {processor.py:153} INFO - Started process (PID=321) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:43:01.655+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:43:01.655+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:43:01.655+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:43:01.666+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:43:01.678+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:43:01.678+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:43:01.700+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:43:01.700+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:43:01.786+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.140 seconds
+[2022-09-09T18:44:18.342+0000] {processor.py:153} INFO - Started process (PID=427) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:44:18.420+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:44:18.421+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:44:18.421+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:44:18.433+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:44:18.446+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:44:18.445+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:44:18.591+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:44:18.590+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:44:18.857+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.518 seconds
+[2022-09-09T18:45:05.361+0000] {processor.py:153} INFO - Started process (PID=684) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:45:05.411+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:45:05.411+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:45:05.411+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:45:05.421+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:45:05.478+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:45:05.478+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:45:05.498+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:45:05.498+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:45:05.656+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.297 seconds
+[2022-09-09T18:45:42.422+0000] {processor.py:153} INFO - Started process (PID=978) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:45:42.451+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:45:42.452+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:45:42.451+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:45:42.462+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:45:42.474+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:45:42.474+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:45:42.649+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:45:42.649+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:45:42.921+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.505 seconds
+[2022-09-09T18:46:20.228+0000] {processor.py:153} INFO - Started process (PID=1493) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:46:20.300+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:46:20.301+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:46:20.300+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:46:20.311+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:46:20.323+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:46:20.323+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:46:20.346+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:46:20.346+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:46:20.536+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.311 seconds
+[2022-09-09T18:46:57.816+0000] {processor.py:153} INFO - Started process (PID=1913) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:46:57.819+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:46:57.820+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:46:57.820+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:46:57.833+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:46:57.847+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:46:57.847+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:46:57.873+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:46:57.873+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:46:57.986+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.174 seconds
+[2022-09-09T18:47:30.359+0000] {processor.py:153} INFO - Started process (PID=2306) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:47:30.359+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:47:30.360+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:47:30.360+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:47:30.370+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:47:30.382+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:47:30.382+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:47:30.404+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:47:30.404+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:47:30.659+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.303 seconds
+[2022-09-09T18:48:23.653+0000] {processor.py:153} INFO - Started process (PID=2895) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:48:23.728+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:48:23.730+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:48:23.729+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:48:23.763+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:48:23.779+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:48:23.779+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:48:23.802+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:48:23.801+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:48:24.062+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.412 seconds
+[2022-09-09T18:49:17.428+0000] {processor.py:153} INFO - Started process (PID=3436) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:49:17.546+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:49:17.546+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:49:17.546+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:49:17.557+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:49:17.571+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:49:17.570+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:49:17.595+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:49:17.595+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:49:17.749+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.323 seconds
+[2022-09-09T18:49:48.688+0000] {processor.py:153} INFO - Started process (PID=3786) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:49:48.689+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:49:48.689+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:49:48.689+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:49:48.701+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:49:48.714+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:49:48.713+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:49:48.739+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:49:48.739+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:49:48.858+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.173 seconds
+[2022-09-09T18:50:47.241+0000] {processor.py:153} INFO - Started process (PID=4014) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:50:47.247+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:50:47.248+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:50:47.248+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:50:47.260+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:50:47.328+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:50:47.328+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:50:47.391+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:50:47.391+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:50:47.497+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.259 seconds
+[2022-09-09T18:52:02.769+0000] {processor.py:153} INFO - Started process (PID=4578) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:52:02.883+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:52:02.883+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:52:02.883+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:52:02.893+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:52:02.906+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:52:02.906+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:52:02.930+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:52:02.930+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:52:03.428+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.662 seconds
+[2022-09-09T18:52:37.472+0000] {processor.py:153} INFO - Started process (PID=5095) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:52:37.498+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:52:37.499+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:52:37.499+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:52:37.509+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:52:37.580+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:52:37.579+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:52:37.599+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:52:37.599+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:52:37.667+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.198 seconds
+[2022-09-09T18:53:14.895+0000] {processor.py:153} INFO - Started process (PID=5659) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:53:15.014+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:53:15.014+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:53:15.014+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:53:15.025+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:53:15.036+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:53:15.035+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:53:15.057+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:53:15.057+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:53:15.184+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.291 seconds
+[2022-09-09T18:53:53.469+0000] {processor.py:153} INFO - Started process (PID=6223) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:53:53.496+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:53:53.497+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:53:53.497+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:53:53.507+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:53:53.566+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:53:53.566+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:53:53.585+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:53:53.584+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:53:53.682+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.216 seconds
+[2022-09-09T18:54:30.735+0000] {processor.py:153} INFO - Started process (PID=6646) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:54:30.753+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:54:30.754+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:54:30.754+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:54:30.764+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:54:30.776+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:54:30.776+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:54:30.801+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:54:30.801+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:54:30.856+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.123 seconds
+[2022-09-09T18:55:08.896+0000] {processor.py:153} INFO - Started process (PID=7054) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:09.136+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:55:09.136+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:09.136+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:09.147+0000] {processor.py:650} INFO - DAG(s) dict_keys(['Spark']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:09.207+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:09.207+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:55:09.228+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:09.228+0000] {dag.py:2981} INFO - Setting next_dagrun for Spark to 2022-09-09T18:00:00+00:00, run_after=2022-09-09T19:00:00+00:00
+[2022-09-09T18:55:09.296+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.403 seconds
+[2022-09-09T18:55:25.326+0000] {processor.py:153} INFO - Started process (PID=7293) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:25.377+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:55:25.377+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:25.377+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:25.383+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:25.382+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_pedidos.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_pedidos.py", line 12, in <module>
+    dag = DAG('Spark - Pedidos (Silver)', description = 'Tratando os dados de pedido da camada bronze e salvando na silver', catchup = False, schedule_interval = "@once", default_args = default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 366, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 66, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Spark - Pedidos (Silver)' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-09-09T18:55:25.384+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:25.767+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.444 seconds
+[2022-09-09T18:55:56.100+0000] {processor.py:153} INFO - Started process (PID=7804) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:56.143+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:55:56.143+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:56.143+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:56.149+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:55:56.148+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_pedidos.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_pedidos.py", line 12, in <module>
+    dag = DAG('Spark - Pedidos (Silver)', description = 'Tratando os dados de pedido da camada bronze e salvando na silver', catchup = False, schedule_interval = "@once", default_args = default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 366, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 66, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Spark - Pedidos (Silver)' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-09-09T18:55:56.149+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:55:56.250+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.153 seconds
+[2022-09-09T18:56:47.973+0000] {processor.py:153} INFO - Started process (PID=8221) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:56:47.990+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:56:47.991+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:56:47.991+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:56:47.997+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:56:47.996+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_pedidos.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_pedidos.py", line 12, in <module>
+    dag = DAG('Spark - Pedidos (Silver)', description = 'Tratando os dados de pedido da camada bronze e salvando na silver', catchup = False, schedule_interval = "@once", default_args = default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 366, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 66, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Spark - Pedidos (Silver)' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-09-09T18:56:47.998+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:56:48.265+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.295 seconds
+[2022-09-09T18:57:28.372+0000] {processor.py:153} INFO - Started process (PID=8762) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:57:28.414+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:57:28.415+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:28.414+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:57:28.422+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:28.420+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_pedidos.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_pedidos.py", line 12, in <module>
+    dag = DAG('Spark - Pedidos (Silver)', description = 'Tratando os dados de pedido da camada bronze e salvando na silver', catchup = False, schedule_interval = "@once", default_args = default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 366, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 66, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'Spark - Pedidos (Silver)' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-09-09T18:57:28.422+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:57:28.499+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.130 seconds
+[2022-09-09T18:57:47.943+0000] {processor.py:153} INFO - Started process (PID=8966) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:57:47.943+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:57:47.944+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:47.944+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:57:47.951+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:57:48.189+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:48.188+0000] {manager.py:508} INFO - Created Permission View: can edit on DAG:spark_pedidos_silver
+[2022-09-09T18:57:48.322+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:48.322+0000] {manager.py:508} INFO - Created Permission View: can read on DAG:spark_pedidos_silver
+[2022-09-09T18:57:48.386+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:48.386+0000] {manager.py:508} INFO - Created Permission View: can delete on DAG:spark_pedidos_silver
+[2022-09-09T18:57:48.386+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:48.386+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:57:48.394+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:48.394+0000] {dag.py:2448} INFO - Creating ORM DAG for spark_pedidos_silver
+[2022-09-09T18:57:48.404+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:57:48.404+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T18:57:48.655+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.715 seconds
+[2022-09-09T18:58:21.895+0000] {processor.py:153} INFO - Started process (PID=9506) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:58:22.121+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:58:22.122+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:58:22.122+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:58:22.128+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:58:22.151+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:58:22.151+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:58:22.171+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:58:22.170+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T18:58:22.538+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.646 seconds
+[2022-09-09T18:58:58.005+0000] {processor.py:153} INFO - Started process (PID=9922) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:58:58.020+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T18:58:58.021+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:58:58.021+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:58:58.027+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T18:58:58.048+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:58:58.048+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T18:58:58.068+0000] {logging_mixin.py:115} INFO - [2022-09-09T18:58:58.068+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T18:58:58.168+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.166 seconds
+[2022-09-09T18:59:59.811+0000] {processor.py:153} INFO - Started process (PID=10496) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:00:00.008+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:00:00.008+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:00:00.008+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:00:00.014+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:00:00.035+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:00:00.035+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:00:00.055+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:00:00.055+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:00:00.497+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.689 seconds
+[2022-09-09T19:00:53.138+0000] {processor.py:153} INFO - Started process (PID=11031) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:00:54.131+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:00:54.132+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:00:54.132+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:00:54.140+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:00:54.161+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:00:54.161+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:00:54.188+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:00:54.188+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:00:54.829+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 1.694 seconds
+[2022-09-09T19:01:24.946+0000] {processor.py:153} INFO - Started process (PID=11481) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:01:24.964+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:01:24.964+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:01:24.964+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:01:24.970+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:01:24.992+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:01:24.992+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:01:25.012+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:01:25.012+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:01:25.098+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.155 seconds
+[2022-09-09T19:02:08.817+0000] {processor.py:153} INFO - Started process (PID=11867) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:02:08.924+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:02:08.927+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:02:08.927+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:02:08.934+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:02:08.957+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:02:08.956+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:02:08.975+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:02:08.975+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:02:09.216+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.402 seconds
+[2022-09-09T19:02:39.456+0000] {processor.py:153} INFO - Started process (PID=12222) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:02:39.456+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:02:39.457+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:02:39.457+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:02:39.463+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:02:39.486+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:02:39.486+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:02:39.505+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:02:39.505+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:02:39.734+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.281 seconds
+[2022-09-09T19:03:18.161+0000] {processor.py:153} INFO - Started process (PID=12399) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:03:20.596+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:03:20.597+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:03:20.597+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:03:20.604+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:03:20.630+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:03:20.630+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:03:20.656+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:03:20.656+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:03:20.762+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 2.604 seconds
+[2022-09-09T19:03:52.461+0000] {processor.py:153} INFO - Started process (PID=12973) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:03:52.504+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:03:52.504+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:03:52.504+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:03:52.510+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:03:52.533+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:03:52.533+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:03:52.551+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:03:52.551+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:03:52.710+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.252 seconds
+[2022-09-09T19:04:40.576+0000] {processor.py:153} INFO - Started process (PID=13575) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:04:40.725+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:04:40.726+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:04:40.725+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:04:40.732+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:04:40.759+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:04:40.759+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:04:40.780+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:04:40.779+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:04:41.047+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.473 seconds
+[2022-09-09T19:05:18.364+0000] {processor.py:153} INFO - Started process (PID=14101) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:05:18.399+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:05:18.400+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:05:18.399+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:05:18.406+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:05:18.431+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:05:18.431+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:05:18.452+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:05:18.451+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2022-09-09T19:05:18.813+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.452 seconds
+[2022-09-09T19:05:53.287+0000] {processor.py:153} INFO - Started process (PID=14368) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:05:53.325+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:05:53.326+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:05:53.325+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:05:53.334+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:05:53.362+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:05:53.362+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:05:53.388+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:05:53.387+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:05:53.871+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.587 seconds
+[2022-09-09T19:07:17.565+0000] {processor.py:153} INFO - Started process (PID=14645) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:07:17.711+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:07:17.712+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:07:17.711+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:07:17.718+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:07:17.740+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:07:17.740+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:07:17.759+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:07:17.759+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:07:18.284+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.722 seconds
+[2022-09-09T19:07:50.904+0000] {processor.py:153} INFO - Started process (PID=15147) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:07:50.997+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:07:50.998+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:07:50.998+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:07:51.008+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:07:51.029+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:07:51.029+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:07:51.048+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:07:51.048+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:07:51.192+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.290 seconds
+[2022-09-09T19:09:15.321+0000] {processor.py:153} INFO - Started process (PID=15742) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:09:15.643+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:09:15.646+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:09:15.645+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:09:15.653+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:09:15.675+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:09:15.675+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:09:15.694+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:09:15.694+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:09:16.050+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.732 seconds
+[2022-09-09T19:11:52.756+0000] {processor.py:153} INFO - Started process (PID=16234) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:11:52.921+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:11:52.921+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:11:52.921+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:11:52.927+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:11:52.951+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:11:52.951+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:11:52.974+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:11:52.974+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:11:53.553+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.799 seconds
+[2022-09-09T19:12:29.223+0000] {processor.py:153} INFO - Started process (PID=16557) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:12:29.595+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:12:29.595+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:12:29.595+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:12:29.601+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:12:29.622+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:12:29.622+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:12:29.644+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:12:29.643+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:12:30.242+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 1.022 seconds
+[2022-09-09T19:13:05.624+0000] {processor.py:153} INFO - Started process (PID=17119) to work on /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:13:05.627+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/dag_pedidos.py for tasks to queue
+[2022-09-09T19:13:05.627+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:13:05.627+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:13:05.633+0000] {processor.py:650} INFO - DAG(s) dict_keys(['spark_pedidos_silver']) retrieved from /opt/airflow/dags/dag_pedidos.py
+[2022-09-09T19:13:05.653+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:13:05.653+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-09T19:13:05.671+0000] {logging_mixin.py:115} INFO - [2022-09-09T19:13:05.671+0000] {dag.py:2981} INFO - Setting next_dagrun for spark_pedidos_silver to None, run_after=None
+[2022-09-09T19:13:05.903+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_pedidos.py took 0.282 seconds

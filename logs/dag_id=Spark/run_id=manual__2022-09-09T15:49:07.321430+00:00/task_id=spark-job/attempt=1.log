@@ -1,0 +1,287 @@
+[2022-09-09T15:49:09.157+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Spark.spark-job manual__2022-09-09T15:49:07.321430+00:00 [queued]>
+[2022-09-09T15:49:09.164+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: Spark.spark-job manual__2022-09-09T15:49:07.321430+00:00 [queued]>
+[2022-09-09T15:49:09.164+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-09T15:49:09.164+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-09T15:49:09.165+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-09T15:49:09.537+0000] {taskinstance.py:1389} INFO - Executing <Task(SparkSubmitOperator): spark-job> on 2022-09-09 15:49:07.321430+00:00
+[2022-09-09T15:49:09.541+0000] {standard_task_runner.py:52} INFO - Started process 1896 to run task
+[2022-09-09T15:49:09.543+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Spark', 'spark-job', 'manual__2022-09-09T15:49:07.321430+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/teste_spark.py', '--cfg-path', '/tmp/tmphovpge6d', '--error-file', '/tmp/tmpf7rzf92r']
+[2022-09-09T15:49:09.543+0000] {standard_task_runner.py:80} INFO - Job 13: Subtask spark-job
+[2022-09-09T15:49:09.838+0000] {task_command.py:371} INFO - Running <TaskInstance: Spark.spark-job manual__2022-09-09T15:49:07.321430+00:00 [running]> on host f70ec88a7fc1
+[2022-09-09T15:49:10.190+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=juacy
+AIRFLOW_CTX_DAG_ID=Spark
+AIRFLOW_CTX_TASK_ID=spark-job
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-09T15:49:07.321430+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-09T15:49:07.321430+00:00
+[2022-09-09T15:49:10.197+0000] {base.py:68} INFO - Using connection ID 'conexao_spark' for task execution.
+[2022-09-09T15:49:10.198+0000] {spark_submit.py:335} INFO - Spark-Submit cmd: spark-submit --master spark://fe77514119f4:7077 --name arrow-spark ./dags/spark-app.py
+[2022-09-09T15:49:12.552+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SparkContext: Running Spark version 3.3.0
+[2022-09-09T15:49:12.600+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-09-09T15:49:12.670+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO ResourceUtils: ==============================================================
+[2022-09-09T15:49:12.670+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2022-09-09T15:49:12.671+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO ResourceUtils: ==============================================================
+[2022-09-09T15:49:12.671+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SparkContext: Submitted application: First App
+[2022-09-09T15:49:12.689+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2022-09-09T15:49:12.701+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO ResourceProfile: Limiting resource is cpu
+[2022-09-09T15:49:12.701+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2022-09-09T15:49:12.740+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SecurityManager: Changing view acls to: default
+[2022-09-09T15:49:12.741+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SecurityManager: Changing modify acls to: default
+[2022-09-09T15:49:12.741+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SecurityManager: Changing view acls groups to:
+[2022-09-09T15:49:12.741+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SecurityManager: Changing modify acls groups to:
+[2022-09-09T15:49:12.742+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(default); groups with view permissions: Set(); users  with modify permissions: Set(default); groups with modify permissions: Set()
+[2022-09-09T15:49:12.939+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO Utils: Successfully started service 'sparkDriver' on port 33525.
+[2022-09-09T15:49:12.973+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:12 INFO SparkEnv: Registering MapOutputTracker
+[2022-09-09T15:49:13.002+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO SparkEnv: Registering BlockManagerMaster
+[2022-09-09T15:49:13.020+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2022-09-09T15:49:13.020+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2022-09-09T15:49:13.024+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2022-09-09T15:49:13.043+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6d6e4f4d-a50e-4561-a772-194b87b24ba1
+[2022-09-09T15:49:13.057+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2022-09-09T15:49:13.073+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO SparkEnv: Registering OutputCommitCoordinator
+[2022-09-09T15:49:13.276+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2022-09-09T15:49:13.363+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO Executor: Starting executor ID driver on host f70ec88a7fc1
+[2022-09-09T15:49:13.369+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2022-09-09T15:49:13.386+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35453.
+[2022-09-09T15:49:13.386+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO NettyBlockTransferService: Server created on f70ec88a7fc1:35453
+[2022-09-09T15:49:13.388+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2022-09-09T15:49:13.393+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:49:13.396+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManagerMasterEndpoint: Registering block manager f70ec88a7fc1:35453 with 434.4 MiB RAM, BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:49:13.398+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:49:13.399+0000] {spark_submit.py:488} INFO - 22/09/09 15:49:13 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:49:13.577+0000] {spark_submit.py:488} INFO - /home/***/.local/lib/python3.7/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/context.py:114: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+[2022-09-09T15:49:15.567+0000] {spark_submit.py:488} INFO - parte 1
+[2022-09-09T15:51:15.636+0000] {base_job.py:229} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 201, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2961, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3039, in _merge
+    options=options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2775, in get
+    identity_token=identity_token,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2878, in _get_impl
+    load_options=load_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3197, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3276, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3247, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2101, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-09-09T15:52:47.551+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 WARN HeartbeatReceiver: Removing executor driver with no recent heartbeats: 213984 ms exceeds timeout 120000 ms
+[2022-09-09T15:52:47.976+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 WARN SparkContext: Killing executors is not supported by current scheduler.
+[2022-09-09T15:52:47.977+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.977+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.977+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.977+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.977+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.978+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.979+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.980+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.981+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.981+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.981+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.983+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.984+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.985+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.986+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.987+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO SharedState: Warehouse path is 'file:/opt/***/spark-warehouse'.
+[2022-09-09T15:52:47.987+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.987+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.987+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.987+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.987+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.989+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.989+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.989+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.989+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.990+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.991+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.991+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.992+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.992+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.992+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:47.994+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO Executor: Told to re-register on heartbeat
+[2022-09-09T15:52:47.994+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None) re-registering with master
+[2022-09-09T15:52:47.994+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.995+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f70ec88a7fc1, 35453, None)
+[2022-09-09T15:52:47.995+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:47 INFO BlockManager: Reporting 0 blocks to the master.
+[2022-09-09T15:52:49.282+0000] {spark_submit.py:488} INFO - Traceback (most recent call last):
+[2022-09-09T15:52:49.282+0000] {spark_submit.py:488} INFO - File "/opt/***/dags/spark-app.py", line 18, in <module>
+[2022-09-09T15:52:49.282+0000] {spark_submit.py:488} INFO - df = sqlContext.read.csv('file:///opt/***/dags/spark_jobs/ips.csv')
+[2022-09-09T15:52:49.282+0000] {spark_submit.py:488} INFO - File "/home/***/.local/lib/python3.7/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 535, in csv
+[2022-09-09T15:52:49.283+0000] {spark_submit.py:488} INFO - File "/home/***/.local/lib/python3.7/site-packages/pyspark/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1322, in __call__
+[2022-09-09T15:52:49.283+0000] {spark_submit.py:488} INFO - File "/home/***/.local/lib/python3.7/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 196, in deco
+[2022-09-09T15:52:49.289+0000] {spark_submit.py:488} INFO - pyspark.sql.utils.AnalysisException: Path does not exist: file:/opt/***/dags/spark_jobs/ips.csv
+[2022-09-09T15:52:49.325+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO SparkContext: Invoking stop() from shutdown hook
+[2022-09-09T15:52:49.335+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO SparkUI: Stopped Spark web UI at http://f70ec88a7fc1:4040
+[2022-09-09T15:52:49.348+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2022-09-09T15:52:49.357+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO MemoryStore: MemoryStore cleared
+[2022-09-09T15:52:49.358+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO BlockManager: BlockManager stopped
+[2022-09-09T15:52:49.368+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2022-09-09T15:52:49.371+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2022-09-09T15:52:49.375+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO SparkContext: Successfully stopped SparkContext
+[2022-09-09T15:52:49.375+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO ShutdownHookManager: Shutdown hook called
+[2022-09-09T15:52:49.376+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-4089bdb2-09f7-4954-8924-6f677bed5e08/pyspark-e2571217-4749-4956-8896-49663631f76b
+[2022-09-09T15:52:49.379+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-4089bdb2-09f7-4954-8924-6f677bed5e08
+[2022-09-09T15:52:49.381+0000] {spark_submit.py:488} INFO - 22/09/09 15:52:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-4620fe23-e689-416c-ab09-3e8bd164e385
+[2022-09-09T15:52:49.418+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 420, in submit
+    f"Cannot execute: {self._mask_cmd(spark_submit_cmd)}. Error code is: {returncode}."
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark://fe77514119f4:7077 --name arrow-spark ./dags/spark-app.py. Error code is: 1.
+[2022-09-09T15:52:49.422+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=Spark, task_id=spark-job, execution_date=20220909T154907, start_date=20220909T154909, end_date=20220909T155249
+[2022-09-09T15:52:49.488+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 13 for task spark-job (Cannot execute: spark-submit --master spark://fe77514119f4:7077 --name arrow-spark ./dags/spark-app.py. Error code is: 1.; 1896)
+[2022-09-09T15:52:49.514+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-09-09T15:52:49.579+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
