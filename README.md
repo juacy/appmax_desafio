@@ -1,6 +1,7 @@
 # appmax_desafio
 Resolução do case para data engineer jr
 
+
 # Passo a passo
 
 Para iniciar você deve clonar esse repositório em sua máquina.
@@ -8,25 +9,21 @@ Para iniciar você deve clonar esse repositório em sua máquina.
 
 ```
 git clone link
-
 ```
 A estrutura de pastas já está toda pronta, então basta construir a imagem do dockerfile, para fazer isso utilize o seguinte comando:
 
 ```
 docker build .
-
 ```
 
 Antes de inicializar tudo temos que fazer o seguinte comando, para criar as credências do airflow, segundo a documentação oficial.
 ```
 docker-compose -f docker-compose.airflow.yaml up airflow-init
-
 ```
 
 Agora podemos inicializar tudo
 ```
 docker-compose -f docker-compose.spark.yaml -f docker-compose.airflow.yaml up
-
 ```
 
 ## Airflow
@@ -94,3 +91,11 @@ O job atividade_2.py poderia ter sido dividido em dois jobs, um para fazer as re
 Os dados ficaram dentro de uma pasta com os códigos, isso foi devido a problemas de leitura quando colocava eles em pastas distintas, então por conta disso ficaram todos dentro da pasta dag, mas deviam estar mais isolados.
 
 
+# Referências
+
+* https://towardsdatascience.com/setting-up-apache-airflow-with-docker-compose-in-5-minutes-56a1110f4122
+* https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
+* https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html#customizing-the-quick-start-docker-compose
+* https://stackoverflow.com/questions/67554074/airflow-trigger-spark-in-different-docker-container
+* https://github.com/yTek01/docker-spark-airflow
+* https://medium.com/codex/executing-spark-jobs-with-apache-airflow-3596717bbbe3
